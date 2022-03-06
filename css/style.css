@@ -1,0 +1,292 @@
+/* 
+
+--- 01 TYPOGRAPHY SAYSTEM
+
+- Font weights:
+Default: 400
+Medium: 500
+semi bold: 600
+bold: 700
+
+-Line heights
+Default: 1
+small: 1.05
+mediumn 1.2
+paragraph default: 1.6
+
+-Letter spacing
+-0.5px
+0.75px
+FONT SIZE SYSTEM (PX)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 02 COLORS
+
+Primary: #e67e22
+
+Tints:
+#fdf2e9
+Shades:
+Accents:
+Greys: 
+#555
+#333
+
+--- 05 SHADOWS
+
+--- 06 BORDER_RADIUS
+
+--- 07 WHITESPACE
+
+SPACING SYSTEM (PX)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* ******************* */
+/* NAVIGATION */
+/* ******************* */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e67e22;
+}
+
+.main-nav {
+  display: inline-block;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #e67e22;
+  border-radius: 9px;
+  padding: 1.2rem 1.6rem;
+  color: white;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #d3731f;
+}
+/* ******************* */
+/* HEADER */
+/* ******************* */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+
+  /* Because we want 
+  header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* ******************* */
+/* HERO SECTION */
+/* ******************* */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0;
+}
+.hero {
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+
+  border-radius: 50%;
+  margin-right: -1.2rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:nth-child(6) {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: #d3731f;
+}
+
+/* ******************** */
+/* HOW IT WORKS SECTION */
+/* ******************** */
+
+.section-how {
+  padding: 8rem 0 9.6rem 0;
+  margin-right: 0;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-img {
+  max-width: 35%;
+  min-width: 100px;
+}
+
+.step-img-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  /* height: 60%; */
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  z-index: -1;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::after {
+  content: "";
+  display: block;
+  width: 50%;
+  /* padding 50% uses 50% of parent's width */
+  padding-bottom: 50%;
+
+  background-color: #f7d7bd;
+  border-radius: 50%;
+  z-index: -1;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-text-box {
+  align-self: center;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/* ***************** */
+/* FEATURED SECTION */
+/* ***************** */
+
+.featured-section {
+  padding: 4.8rem 0 3.2rem 0;
+  border-top: 3px solid #f7d7bd;
+  border-bottom: 3px solid #f7d7bd;
+  position: relative;
+}
+
+.featured-section .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.featured-imgs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3.2rem 0;
+}
+
+.featured-img {
+  max-width: 100%;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.featured-img:hover {
+  opacity: 100%;
+  filter: brightness(1);
+  transition: all 0.5s;
+}
+
+.featured-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #777;
+
+  font-size: 1.4rem;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+}
+
+.featured-link:active,
+.featured-link:visited,
+.featured-link {
+  max-width: 15%;
+}
