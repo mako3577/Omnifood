@@ -154,3 +154,11 @@ strong {
 .text-center {
   text-align: center;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}

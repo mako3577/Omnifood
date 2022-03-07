@@ -402,22 +402,23 @@ SPACING SYSTEM (PX)
 /* ********************* */
 .section-testimonials {
   background-color: #fdf2e9;
-  padding: 1rem;
-  padding-right: 0.5rem;
+
   margin-bottom: 9.6rem;
 }
 
 .testimonial-section-container {
-  margin-left: 3rem;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 60fr 40fr;
   /* align-items: center;
   justify-content: center; */
   justify-items: center;
   align-items: center;
+  gap: 0;
 }
 .testimonials {
-  gap: 9.6rem;
-  line-height: 1.6;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+  line-height: 1.8;
+  justify-content: space-around;
 }
 
 .testimonial {
@@ -425,7 +426,9 @@ SPACING SYSTEM (PX)
   flex-direction: column;
   gap: 1.6rem;
 }
-
+.testimonial-left-side {
+  padding: 9.6rem;
+}
 .gallery-img {
   width: 100%;
   height: 100%;
@@ -438,6 +441,7 @@ SPACING SYSTEM (PX)
 
 .gallery {
   gap: 1.2rem;
+  padding: 1.2rem;
 }
 
 .unresizable-div {
@@ -447,8 +451,8 @@ SPACING SYSTEM (PX)
 }
 
 .customer-img {
-  width: 8rem;
-  height: 8rem;
+  width: 6.4rem;
+  height: 6.4rem;
   border-radius: 50%;
 }
 
@@ -460,4 +464,114 @@ SPACING SYSTEM (PX)
   font-size: 1.6rem;
   color: #777;
   font-style: italic;
+}
+
+/* *************** */
+/* PRICING SECTION */
+/* *************** */
+
+.cards-container {
+  display: flex;
+  gap: 6.4rem;
+  justify-content: center;
+}
+.plan-card {
+  height: 56rem;
+  max-width: 40rem;
+  padding: 2.2rem 4.4rem;
+  align-items: center;
+  gap: 3.2rem;
+  margin-bottom: 5.2rem;
+  border-radius: 9px;
+  border: #f7d7bd solid 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.plan-card.complete {
+  background-color: #fdf2e9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.recomended {
+  background-color: hsla(47, 100%, 62%, 0.863);
+  color: #333;
+  padding: 1.3rem 3.2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 4%;
+  right: -10%;
+  transform: rotate(45deg);
+}
+
+.pricing-list {
+  justify-items: left;
+  margin-top: 4.8rem;
+  gap: 1.6rem;
+  font-size: 2rem;
+  line-height: 1.8rem;
+}
+
+.pricing-list li {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.price {
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+.price span {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.plan-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.name-and-price {
+  padding-top: 3.2rem;
+  gap: 2.4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.price-per-month {
+  font-size: 1.6rem;
+}
+.cta-button {
+  background-color: #e67e22;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-top: 1.6rem;
+  color: white;
+  padding: 1.8rem 3.6rem;
+  border-radius: 9px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d3731f;
+  transform: scale(105%);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-icon {
+  color: #e67e22;
+}
+
+/* .pricing-icon.not-included {
+  color: rgb(168, 28, 28);
+  color: #d3731f;
+} */
+
+.taxes-info {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 7.4rem;
 }
