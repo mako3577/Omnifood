@@ -80,7 +80,7 @@ body {
 /* Headings */
 .heading-primary,
 .heading-secondary,
-.tertiary-heading {
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -115,3 +115,42 @@ body {
   margin-bottom: 5rem;
 }
 /* end of headings */
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #d3731f;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  padding-bottom: 2px;
+  font-size: 1.8rem;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #d3731f;
+  border-bottom: 1px solid transparent;
+}
+
+.text-center {
+  text-align: center;
+}
