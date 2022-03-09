@@ -541,8 +541,9 @@ ul.meal-atributes {
 
 @media (max-width: 520px) {
   .featured-imgs-container {
+    grid-template-columns: minmax(50px, 1fr);
     min-width: 120px;
-    gap: 15rem;
+    gap: 5rem;
     overflow: scroll;
     padding-bottom: 1rem;
   }
@@ -629,7 +630,7 @@ ul.meal-atributes {
   }
   .featured-imgs-container {
     min-width: 120px;
-    gap: 15rem;
+    gap: 9rem;
     overflow: scroll;
     padding-bottom: 1rem;
   }
