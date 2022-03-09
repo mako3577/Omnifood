@@ -500,6 +500,24 @@ ul.meal-atributes {
     grid-template-columns: 1fr;
   }
 
+  .plan-card .cta-button {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+  }
+  .plan-card ul {
+    font-size: 1.4rem;
+  }
+  .pricing-icon {
+    min-width: 2.2rem;
+  }
+
+  .recomended {
+    right: -14%;
+  }
+  .price-per-month {
+    font-size: 1.4rem;
+  }
+
   /* FOOTER SECTION */
 
   .footer .container {
@@ -514,11 +532,17 @@ ul.meal-atributes {
     justify-items: center;
     align-items: center;
   }
+  .header.main.main-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 6.8rem;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
+
   .cards-container {
-    min-width: 250px;
+    min-width: 300px;
     gap: 2rem;
     overflow: scroll;
     align-items: flex-start;
@@ -526,12 +550,59 @@ ul.meal-atributes {
     justify-content: flex-start;
   }
   .plan-card {
-    min-width: 250px;
+    min-width: 300px;
   }
-    .hero-image {
-    overflow: hidden;
-    width: 40rem;
+
+  .featured-section {
+    padding: 0 0.8rem;
+  }
+  .featured-section .container {
+    padding: 0;
+  }
+  .featured-text {
+    font-size: 1.2rem;
+  }
+  .featured-imgs-container {
+    gap: 0;
+  }
+
+  /* HOW */
+  .section-how .container.grid {
+    column-gap: 0.8rem;
+  }
+  .step-description {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .step-img {
+    transform: scale(150%);
+  }
+  .diet-container {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    column-gap: 4.4rem;
+    line-height: 1.6;
+  }
+  .gallery {
+    gap: 0.8rem;
+    padding: 0.8rem;
+  }
+  .cta-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .cta-text-box {
+    padding: 3.2rem 1.4rem 1.4rem 1.6rem;
+  }
+
+  /* Footer */
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo-col {
+    grid-column: 1/-1;
   }
 }
-
-
