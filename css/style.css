@@ -93,7 +93,6 @@ SPACING SYSTEM (PX)
 /* ******************* */
 
 .header {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fdf2e9;
@@ -116,6 +115,7 @@ SPACING SYSTEM (PX)
   background-color: #fdf2e9;
   padding: 4.8rem 0;
 }
+
 .hero {
   align-items: center;
   max-width: 130rem;
@@ -137,14 +137,9 @@ SPACING SYSTEM (PX)
 }
 
 .delivered-meals {
-  display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
-}
-
-.delivered-imgs {
-  display: flex;
 }
 
 .delivered-imgs img {
@@ -424,6 +419,7 @@ SPACING SYSTEM (PX)
 .testimonial {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1.6rem;
 }
 .testimonial-left-side {
@@ -573,5 +569,225 @@ SPACING SYSTEM (PX)
 .taxes-info {
   font-size: 1.6rem;
   text-align: center;
-  margin-bottom: 7.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.flex-container {
+  gap: 4.2rem;
+  justify-content: space-between;
+}
+.flex-item {
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.pricing-feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+  background-color: #fdf2e9;
+  padding: 1.4rem;
+  border-radius: 50%;
+}
+
+.pricing-feature-heading {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+.pricing-feature-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.pricing-section {
+  padding: 9.6rem 0;
+}
+
+/* CTA SECTION */
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 9px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  /* temp */
+
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 6.4rem;
+  padding-top: 4.8rem;
+  color: #45260a;
+}
+
+#cta-heading {
+  color: #45260a;
+  margin-bottom: 4.8rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  color: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 9px;
+  background-color: #fdf2e9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form button {
+  border: inherit;
+  box-shadow: inherit;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.button--form {
+  background-color: rgb(69, 38, 10);
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.button--form:hover {
+  background-color: rgba(107, 59, 16, 0);
+  box-shadow: inset 0 0 0 2px rgba(69, 38, 10, 1);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px #f3d4ba77;
+}
+
+/* *************** */
+/* FOOTER */
+/* *************** */
+
+.footer {
+  padding: 12.8rem 0 9.6rem 0;
+  border-top: #e1e1e1 1px dotted;
+}
+
+.footer-nav {
+  list-style: none;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.logo-col {
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.adress-col {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  width: 100%;
+  justify-content: space-between;
+  gap: 0.2rem;
+  list-style: none;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  filter: brightness(0);
+  opacity: 0.5;
+  transition: filter 0.3s, opacity 0.5s;
+}
+
+.social-icon:hover {
+  opacity: 100%;
+  filter: brightness(1);
+}
+
+.copyright,
+.contacts p,
+.contacts a {
+  font-size: 1.6rem;
+  color: #767676;
+}
+.contacts {
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.links-p {
+  line-height: 1.6;
+}
+
+footer .grid--5-cols {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }

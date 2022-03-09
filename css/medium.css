@@ -1,0 +1,529 @@
+@media (max-width: 1200px) {
+  /* general */
+  .heading-primary {
+    font-size: 4.4rem;
+    line-height: 1;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    line-height: 1.1;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .header.main.main-header {
+    padding: 0 2.4rem;
+  }
+  /* ******************** */
+
+  /* HERO */
+
+  /* ******************** */
+
+  .hero {
+    padding: 0 2.4rem;
+    gap: 3.2rem;
+  }
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .hero-image {
+    width: 50rem;
+  }
+
+  .delivered-imgs img {
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid antiquewhite;
+  }
+
+  /* HOW SECTION */
+  .section-how {
+    padding: 8rem 2.4rem 8rem 2.4rem;
+  }
+
+  /* ******************** */
+
+  /* MEALS */
+
+  /* ******************** */
+}
+
+.section-meals {
+  padding: 6.4rem 0;
+}
+
+.meal-title {
+  font-size: 1.6rem;
+}
+.meal-atribute {
+  font-size: 1.6rem;
+}
+
+.meal-content {
+  padding: 2.4rem 2.4rem;
+}
+ul.meal-atributes {
+  gap: 2.4rem;
+}
+
+/* ******************** */
+
+/* TESTOMONIALS */
+.section-testimonials {
+  margin-bottom: 8rem;
+}
+
+.testimonial-left-side {
+  padding: 8rem 6.4rem;
+}
+
+.gallery {
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonials {
+  column-gap: 6.4rem;
+}
+
+.customer-review {
+  font-size: 1.6rem;
+}
+
+.customer-img {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+/* ******************** */
+
+.pricing-section {
+  padding: 8rem 0;
+}
+
+.pricing-feature-text {
+  font-size: 1.6rem;
+}
+
+.social-links {
+  align-self: center;
+}
+
+/* ******************** */
+/* CTA */
+/* ******************** */
+
+.cta-form input,
+.cta-form select {
+  font-size: 1.6rem;
+}
+
+/* ******************** */
+/* FOOTER */
+/* ******************** */
+
+.copyright,
+.contacts p,
+.contacts a {
+  font-size: 1.4rem;
+}
+.copyright {
+  text-align: center;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.4rem;
+}
+
+/* ************************ */
+
+/* ************************ */
+
+/* ************************ */
+
+/* ************************ */
+
+@media (max-width: 1000px) {
+  /* general */
+  .heading-primary {
+    font-size: 3.6rem;
+    line-height: 1;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    font-size: 1.55rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 3.2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 2.4rem;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .header.main.main-header {
+    padding: 0 2.4rem;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+  img.logo {
+    height: 1.8rem;
+  }
+  /* ******************** */
+
+  /* HERO */
+
+  /* ******************** */
+
+  .hero {
+    padding: 0 2.4rem;
+    gap: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 5.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+  /* .hero-img-box {
+    display: flex;
+    justify-content: flex-end;
+  } */
+  .hero-image {
+    width: 50rem;
+  }
+
+  .delivered-imgs img {
+    height: 5.2rem;
+    width: 5.2rem;
+    border: 3px solid antiquewhite;
+  }
+
+  /* HOW SECTION */
+  .section-how {
+    padding: 8rem 2.4rem 8rem 2.4rem;
+  }
+  .section-how .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .step-description {
+    font-size: 1.8rem;
+  }
+
+  /* ******************** */
+
+  /* MEALS */
+
+  /* ******************** */
+
+  .section-meals {
+    padding: 6.4rem 0;
+  }
+  .section-meals .container.grid {
+    column-gap: 2.4rem;
+  }
+
+  .meal:hover {
+    transform: translate(0, -1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+  }
+
+  .meal-title {
+    font-size: 1.6rem;
+  }
+  .meal-atribute {
+    font-size: 1.6rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 2.4rem;
+  }
+
+  ul.meal-atributes {
+    gap: 2.4rem;
+  }
+  .diet-name {
+    font-size: 1.6rem;
+  }
+
+  /* ******************** */
+
+  /* TESTOMONIALS */
+  .section-testimonials {
+    margin-bottom: 6.4rem;
+  }
+
+  .testimonial-left-side {
+    padding: 4.8rem 3.2rem;
+  }
+  .container.subheading-container {
+    padding-left: 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    padding: 0.4rem;
+  }
+
+  .testimonials {
+    column-gap: 6.4rem;
+  }
+
+  .customer-review {
+    font-size: 1.6rem;
+  }
+
+  .customer-img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  /* ******************** */
+  /* PRICING */
+  .cards-container {
+    gap: 3.2rem;
+  }
+
+  .plan-card {
+    gap: 2.4rem;
+    padding: 1.4rem 2.8rem;
+    padding-bottom: 4.8rem;
+    height: fit-content;
+  }
+  .plan-card ul {
+    font-size: 1.8rem;
+  }
+  .plan-card ul li {
+    gap: 0.8rem;
+  }
+  .pricing-section {
+    padding: 6.4rem 0;
+  }
+
+  .subheading.plan-name {
+    font-size: 1.6rem;
+  }
+  .price {
+    font-size: 5.2rem;
+  }
+  .pricing-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    overflow: visible;
+  }
+  .pricing-feature-text {
+    font-size: 1.6rem;
+  }
+
+  .cta-button {
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    padding: 1.4rem 2.8rem;
+  }
+  .recomended {
+    font-size: 1.4rem;
+    top: 4%;
+    right: -12%;
+  }
+  .social-links {
+    align-self: center;
+  }
+
+  /* ******************** */
+  /* CTA */
+  /* ******************** */
+  .cta-text-box {
+    padding: 3.2rem 3.2rem;
+  }
+  .cta-form {
+    column-gap: 2.4rem;
+  }
+  .cta-form input,
+  .cta-form select {
+    font-size: 1.6rem;
+  }
+  .cta-form-button {
+    font-size: 1.6rem;
+  }
+
+  /* ******************** */
+  /* FOOTER */
+  /* ******************** */
+
+  footer .container {
+    column-gap: 3.2rem;
+  }
+
+  .copyright,
+  .contacts p,
+  .contacts a {
+    font-size: 1.4rem;
+  }
+  .copyright {
+    text-align: center;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 780px) {
+  img.logo {
+    height: 1.6rem;
+  }
+  .main-nav-list {
+    gap: 1.6rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  img.logo {
+    height: 1.6rem;
+  }
+  .main-nav-list {
+    gap: 1.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.4rem;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    font-size: 1.4rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .hero-image {
+    width: 45rem;
+  }
+
+  .featured-section {
+    padding: 3.2rem 1.6rem 0;
+  }
+
+  /* MEALS SECTION */
+
+  .section-meals .container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.4rem;
+  }
+  .diet-container {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 50%;
+    margin-bottom: 4.4rem;
+  }
+  .all-recipes {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonial-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  /* PRICING */
+
+  .cards-container {
+    padding: 0;
+    gap: 2.4rem;
+  }
+  .flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER SECTION */
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .footer-nav {
+    gap: 1.6rem;
+  }
+  .logo-col {
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .pricing-section .container {
+    flex-direction: row;
+    width: fit-content;
+  }
+  .plan-card {
+    overflow: auto;
+    max-width: 400px;
+    width: 400px;
+  }
+}

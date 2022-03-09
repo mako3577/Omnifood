@@ -38,6 +38,9 @@ body {
 .grid--3-cols {
   grid-template-columns: 1fr 1fr 1fr;
 }
+.grid--5-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -48,7 +51,8 @@ body {
 /* ******************* */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn {
   display: inline-block;
   font-size: 2rem;
   background-color: #e67e22;
@@ -161,4 +165,9 @@ strong {
 
 .flex--column {
   flex-direction: column;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px #e67d2277;
 }
