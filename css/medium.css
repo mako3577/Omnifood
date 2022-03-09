@@ -528,6 +528,10 @@ ul.meal-atributes {
   .plan-card {
     min-width: 250px;
   }
+    .hero-image {
+    overflow: hidden;
+    width: 40rem;
+  }
 }
 
 
