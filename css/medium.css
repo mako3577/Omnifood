@@ -229,7 +229,7 @@ ul.meal-atributes {
     justify-content: flex-end;
   } */
   .hero-image {
-    width: 50rem;
+    width: 47rem;
   }
 
   .delivered-imgs img {
@@ -541,8 +541,10 @@ ul.meal-atributes {
 
 @media (max-width: 470px) {
   .hero-image {
+    margin-top: 1.4rem;
     max-width: 35rem;
   }
+
   .cards-container {
     min-width: 270px;
     gap: 2rem;
@@ -564,9 +566,9 @@ ul.meal-atributes {
   .featured-text {
     font-size: 1.2rem;
   }
-  .featured-imgs-container {
-    gap: 0;
-  }
+  /* .featured-imgs-container {
+    gap: 16rem;
+  } */
 
   /* HOW */
   .section-how .container.grid {
@@ -655,5 +657,11 @@ ul.meal-atributes {
   }
   .cta {
     grid-template-columns: 1fr 0;
+  }
+}
+
+@media (max-width: 419px) {
+  .hero-text-box .btn.margin-right-sm {
+    margin-right: 0 !important;
   }
 }
