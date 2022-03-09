@@ -620,7 +620,7 @@ ul.meal-atributes {
   }
   .featured-imgs-container {
     min-width: 120px;
-    gap: 8rem;
+    gap: 15rem;
     overflow: scroll;
     padding-bottom: 1rem;
   }
@@ -665,4 +665,3 @@ ul.meal-atributes {
     margin-right: 0 !important;
   }
 }
- 
