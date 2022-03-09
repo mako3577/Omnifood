@@ -518,7 +518,7 @@ ul.meal-atributes {
 
 @media (max-width: 400px) {
   .cards-container {
-    min-width: 300px;
+    min-width: 250px;
     gap: 2rem;
     overflow: scroll;
     align-items: flex-start;
@@ -526,7 +526,7 @@ ul.meal-atributes {
     justify-content: flex-start;
   }
   .plan-card {
-    min-width: 300px;
+    min-width: 250px;
   }
 }
 
