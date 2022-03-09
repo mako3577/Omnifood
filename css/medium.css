@@ -539,6 +539,15 @@ ul.meal-atributes {
   }
 }
 
+@media (max-width: 520px) {
+  .featured-imgs-container {
+    min-width: 120px;
+    gap: 15rem;
+    overflow: scroll;
+    padding-bottom: 1rem;
+  }
+}
+
 @media (max-width: 470px) {
   .hero-image {
     margin-top: 1.4rem;
@@ -620,7 +629,7 @@ ul.meal-atributes {
   }
   .featured-imgs-container {
     min-width: 120px;
-    gap: 250px;
+    gap: 15rem;
     overflow: scroll;
     padding-bottom: 1rem;
   }
