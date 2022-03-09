@@ -516,14 +516,16 @@ ul.meal-atributes {
   }
 }
 
-@media (max-width: 500px) {
-  .pricing-section .container {
-    flex-direction: row;
-    width: fit-content;
+@media (max-width: 400px) {
+  .cards-container {
+    min-width: 400px;
+    overflow: scroll;
+    align-items: flex-start;
+    justify-items: flex-start;
+    justify-content: flex-start;
   }
   .plan-card {
-    overflow: auto;
-    max-width: 400px;
-    width: 400px;
+    min-width: 400px;
   }
 }
+
