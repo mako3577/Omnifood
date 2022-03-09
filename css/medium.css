@@ -540,9 +540,11 @@ ul.meal-atributes {
 }
 
 @media (max-width: 470px) {
-
+  .hero-image {
+    max-width: 35rem;
+  }
   .cards-container {
-    min-width: 300px;
+    min-width: 270px;
     gap: 2rem;
     overflow: scroll;
     align-items: flex-start;
@@ -550,7 +552,7 @@ ul.meal-atributes {
     justify-content: flex-start;
   }
   .plan-card {
-    min-width: 300px;
+    min-width: 250px;
   }
 
   .featured-section {
@@ -604,5 +606,54 @@ ul.meal-atributes {
   }
   .logo-col {
     grid-column: 1/-1;
+  }
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited,
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.4rem;
+  }
+  .delivered-meals {
+    flex-direction: column;
+  }
+  .featured-imgs-container {
+    min-width: 120px;
+    gap: 8rem;
+    overflow: scroll;
+    padding-bottom: 1rem;
+  }
+  .featured-img {
+    min-width: 100px;
+  }
+  .featured-text {
+    font-size: 0.8rem;
+  }
+  .section-how .container {
+    grid-template-columns: 1fr;
+    row-gap: 11rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 4/5;
+  }
+
+  .section-meals .container.grid {
+    display: block;
+  }
+  .meal {
+    margin-bottom: 2.4rem;
+  }
+  .diet-container {
+    width: 100%;
+  }
+  span.subheading {
+    padding-bottom: 1.6rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+  .cta {
+    grid-template-columns: 1fr 0;
   }
 }
