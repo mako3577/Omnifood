@@ -516,7 +516,7 @@ ul.meal-atributes {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .pricing-section .container {
     flex-direction: row;
     width: fit-content;
