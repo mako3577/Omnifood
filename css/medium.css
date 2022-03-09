@@ -635,7 +635,10 @@ ul.meal-atributes {
   }
   .featured-img {
     min-width: 70px;
-    margin-right: 6.4rem;
+    margin-right: 10rem;
+  }
+  .featured-img:last-child {
+    margin-right: 2rem;
   }
   .featured-text {
     font-size: 0.8rem;
