@@ -629,13 +629,13 @@ ul.meal-atributes {
     flex-direction: column;
   }
   .featured-imgs-container {
-    min-width: 120px;
     gap: 9rem;
     overflow: scroll;
     padding-bottom: 1rem;
   }
   .featured-img {
-    min-width: 100px;
+    min-width: 70px;
+    margin-right: 4.4rem;
   }
   .featured-text {
     font-size: 0.8rem;
