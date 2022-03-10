@@ -42,6 +42,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const navButtons = document.querySelectorAll(".main-nav-link");
+navButtons[0].addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+navButtons[1].addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+navButtons[2].addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+navButtons[3].addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+navButtons[4].addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

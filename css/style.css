@@ -122,7 +122,7 @@ SPACING SYSTEM (PX)
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
-  transition: all 3s;
+  transition: all 0.4s;
 }
 
 .header-fixed-pos {

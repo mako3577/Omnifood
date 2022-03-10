@@ -722,11 +722,43 @@ ul.meal-atributes {
   .cta {
     grid-template-columns: 1fr 0;
   }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+  }
+
+  .hero-text-box .btn.margin-right-sm {
+    margin-right: 6px !important;
+    padding: 1.2rem;
+  }
+  .section-cta {
+    padding-bottom: 6.4rem;
+  }
+  .footer {
+    padding-top: 6.4rem;
+  }
 }
 
 /* 419px */
 @media (max-width: 26.1875em) {
-  .hero-text-box btn.margin-right-sm {
-    margin-right: 2px !important;
+  .hero-text-box .btn.margin-right-sm {
+    margin-right: 4px !important;
+  }
+
+  .hero {
+    padding: 0 1.2rem;
+  }
+
+  .section-how {
+    padding: 4.4rem 1.2rem;
+  }
+
+  .pricing-section .container {
+    padding: 0 1.2rem;
+  }
+  .cards-container.container {
+    padding-left: 0;
   }
 }
