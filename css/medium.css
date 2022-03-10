@@ -170,12 +170,6 @@ ul.meal-atributes {
     padding: 1.2rem 2.4rem;
   }
 
-  .main-nav-link.nav-cta:link,
-  .main-nav-link.nav-cta:visited {
-    font-size: 1.55rem;
-    padding: 0.8rem 1.6rem;
-  }
-
   .heading-secondary {
     font-size: 3rem;
     line-height: 1.1;
@@ -411,42 +405,44 @@ ul.meal-atributes {
 }
 
 @media (max-width: 780px) {
-  img.logo {
-    height: 1.6rem;
-  }
-  .main-nav-list {
-    gap: 1.6rem;
+  .button-for-nav {
+    display: block;
   }
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
-
-  .main-nav-link.nav-cta:link,
-  .main-nav-link.nav-cta:visited {
-    font-size: 1.6rem;
-    padding: 0.8rem 1.6rem;
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    transform: translate(100%, 0);
+  }
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .main-nav-list {
+    transform: translate(0, 0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 }
 
 @media (max-width: 750px) {
   img.logo {
     height: 1.6rem;
-  }
-  .main-nav-list {
-    gap: 1.4rem;
-  }
-
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 1.4rem;
-  }
-
-  .main-nav-link.nav-cta:link,
-  .main-nav-link.nav-cta:visited {
-    font-size: 1.4rem;
-    padding: 0.6rem 1.2rem;
   }
 
   .hero-image {
@@ -547,6 +543,9 @@ ul.meal-atributes {
     overflow: scroll;
     padding-bottom: 1rem;
   }
+  .plan-card:first-child {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 470px) {
@@ -554,7 +553,12 @@ ul.meal-atributes {
     margin-top: 1.4rem;
     max-width: 35rem;
   }
-
+  .footer .container {
+    column-gap: 7.2rem;
+  }
+  .footer-heading {
+    margin-bottom: 3.2rem;
+  }
   .cards-container {
     min-width: 270px;
     gap: 2rem;
@@ -619,12 +623,7 @@ ul.meal-atributes {
   .logo-col {
     grid-column: 1/-1;
   }
-  .main-nav-link.nav-cta:link,
-  .main-nav-link.nav-cta:visited,
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 1.4rem;
-  }
+
   .delivered-meals {
     flex-direction: column;
   }
