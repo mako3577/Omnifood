@@ -556,6 +556,9 @@ ul.meal-atributes {
   .footer .container {
     column-gap: 7.2rem;
   }
+  .footer-nav {
+    line-height: 1.8rem;
+  }
   .footer-heading {
     margin-bottom: 3.2rem;
   }
