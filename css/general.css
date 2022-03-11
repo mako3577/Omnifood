@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -172,4 +173,10 @@ strong {
 *:focus {
   outline: none;
   box-shadow: 0 0 0 8px #e67d2277;
+}
+
+/* nav-bar js function use */
+.fixed {
+  position: fixed;
+  box-shadow: none;
 }

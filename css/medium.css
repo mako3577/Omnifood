@@ -577,8 +577,16 @@ ul.meal-atributes {
     overflow: scroll;
     padding-bottom: 1rem;
   }
+  .cards-container {
+    overflow: scroll;
+    flex-direction: row-reverse;
+  }
   .plan-card:first-child {
-    margin-right: 2rem;
+    margin-right: 1rem;
+  }
+  .plan-card {
+    min-width: 250px;
+    padding: 1rem;
   }
   .section-hero {
     padding-top: 3.2rem;
@@ -592,6 +600,9 @@ ul.meal-atributes {
 
   .featured-section .container {
     padding: 0;
+  }
+  .testimonials {
+    gap: 6.4rem;
   }
 }
 
@@ -613,13 +624,13 @@ ul.meal-atributes {
   .cards-container {
     min-width: 270px;
     gap: 2rem;
-    overflow: scroll;
     align-items: flex-start;
     justify-items: flex-start;
     justify-content: flex-start;
   }
   .plan-card {
     min-width: 250px;
+    min-height: 490px;
   }
 
   .featured-section {
@@ -629,7 +640,7 @@ ul.meal-atributes {
     padding: 0;
   }
   .featured-text {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   /* .featured-imgs-container {
     gap: 16rem;
@@ -692,6 +703,7 @@ ul.meal-atributes {
     margin-right: 2rem;
   }
   .featured-text {
+    top: 2%;
     font-size: 0.8rem;
   }
   .section-how .container {
@@ -717,7 +729,7 @@ ul.meal-atributes {
 
   .testimonials {
     grid-template-columns: 1fr;
-    gap: 8rem;
+    gap: 4.4rem;
   }
   .cta {
     grid-template-columns: 1fr 0;
@@ -738,6 +750,15 @@ ul.meal-atributes {
   }
   .footer {
     padding-top: 6.4rem;
+  }
+  .diet-icon {
+    padding-right: 8px;
+  }
+  .meal-atribute {
+    column-gap: 1.1rem;
+  }
+  .meal-atribute span {
+    padding-left: 5px;
   }
 }
 

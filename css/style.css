@@ -841,8 +841,3 @@ footer .grid--5-cols {
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
-
-.fixed {
-  position: fixed;
-  box-shadow: none;
-}

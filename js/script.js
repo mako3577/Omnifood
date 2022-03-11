@@ -22,6 +22,11 @@ yearEL.textContent = currentYear;
 
 const btnNavEl = document.querySelector(".button-for-nav");
 const headerEl = document.querySelector(".header");
+const heroSec = document.querySelector(".section-hero");
+
+var navHeight = document.querySelector(".main-header").clientHeight;
+
+const x = String(navHeight) + "px";
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
@@ -31,6 +36,20 @@ btnNavEl.addEventListener("click", function () {
   btnNavEl.classList.toggle("fixed");
 });
 
+// Once nav-bar changes it's position to 'fixed'
+// hero section marginTop is being increased to keep
+// scrolling smooth
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 700) {
+      heroSec.style.marginTop = x;
+      // add padding top to show content behind navbar
+    } else {
+      heroSec.style.marginTop = "0";
+    }
+  });
+});
+// Make header (nav-bar) sticked to top of current display
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     if (window.scrollY > 700) {
@@ -41,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+console.log(x);
 
 const navButtons = document.querySelectorAll(".main-nav-link");
 navButtons[0].addEventListener("click", function () {
