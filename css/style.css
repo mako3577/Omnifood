@@ -502,8 +502,6 @@ we have to set margin on hero to avoid shaking */
   flex-direction: column;
   justify-content: space-between;
   gap: 1.6rem;
-
-  animation-duration: 3s;
 }
 
 .testimonial:first-child {
