@@ -52,6 +52,22 @@ const obs = new IntersectionObserver(
 );
 obs.observe(heroSec);
 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 130;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+    if (elementTop > 1.2 * windowHeight - elementVisible) {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
 // Set mobile nav buttons to close the menu
 const navButtons = document.querySelectorAll(".main-nav-link");
 navButtons.forEach(function (link) {
