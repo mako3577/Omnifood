@@ -424,7 +424,11 @@ ul.meal-atributes {
     font-size: 3rem;
   }
   .main-nav-list {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.801);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
     left: 0;
@@ -571,9 +575,8 @@ ul.meal-atributes {
 /* 520px */
 @media (max-width: 32.5em) {
   .featured-imgs-container {
-    grid-template-columns: minmax(50px, 1fr);
-    min-width: 120px;
-    gap: 5rem;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    gap: 2rem;
     overflow: scroll;
     padding-bottom: 1rem;
   }
@@ -659,7 +662,7 @@ ul.meal-atributes {
   }
 
   .diet-container {
-    padding: 1rem 1rem 0.5rem 1rem;
+    padding: 2rem 1rem 0.5rem 1rem;
   }
 
   /* Testimonials */
@@ -691,17 +694,15 @@ ul.meal-atributes {
     flex-direction: column;
   }
   .featured-imgs-container {
-    gap: 9rem;
+    gap: 2rem;
     overflow: scroll;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1.2rem;
   }
   .featured-img {
-    min-width: 70px;
-    margin-right: 10rem;
+    min-width: 40px;
   }
-  .featured-img:last-child {
-    margin-right: 2rem;
-  }
+
   .featured-text {
     top: 2%;
     font-size: 0.8rem;
@@ -781,5 +782,8 @@ ul.meal-atributes {
   }
   .cards-container.container {
     padding-left: 0;
+  }
+  .section-cta .container {
+    padding: 0 1.2rem;
   }
 }

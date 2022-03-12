@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an Ai-powered food subscription that will make you
+     eat healthy again,  365 days per year. 
+     It's tailored to your personal tastes and nutritional needs."
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="icon" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +24,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/medium.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -23,6 +32,10 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
     <script defer src="js/script.js"></script>
   </head>
@@ -89,12 +102,16 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              class="hero-image"
-              alt="a woman enjoying food, meal in storage 
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.min.png" type="image/png" />
+              <img
+                src="img/hero.webp"
+                class="hero-image"
+                alt="a woman enjoying food, meal in storage 
             container and food bowls on a table"
-            />
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -106,21 +123,33 @@
               target="_blank"
               class="featured-link"
               href="https://businessinsider.com.pl"
-              ><img class="featured-img" src="img/logos/business-insider.png" />
+              ><img
+                class="featured-img"
+                src="img/logos/business-insider.png"
+                alt="business insider's logo"
+              />
             </a>
             <a
               target="_blank"
               class="featured-link"
               href="https://www.forbes.pl"
             >
-              <img class="featured-img" src="img/logos/forbes.png" />
+              <img
+                class="featured-img"
+                src="img/logos/forbes.png"
+                alt="forbes logo"
+              />
             </a>
             <a
               target="_blank"
               class="featured-link"
               href="https://techcrunch.com"
             >
-              <img class="featured-img" src="img/logos/techcrunch.png" />
+              <img
+                class="featured-img"
+                src="img/logos/techcrunch.png"
+                alt="techrunch logo"
+              />
             </a>
             <a
               target="_blank"
@@ -130,6 +159,7 @@
               <img
                 class="featured-img"
                 src="img/logos/the-new-york-times.png"
+                alt="New York times logo"
               />
             </a>
             <a
@@ -137,7 +167,11 @@
               class="featured-link"
               href="https://eu.usatoday.com"
             >
-              <img class="featured-img" src="img/logos/usa-today.png" />
+              <img
+                class="featured-img"
+                src="img/logos/usa-today.png"
+                alt="usa today logo"
+              />
             </a>
           </div>
         </div>
@@ -293,54 +327,63 @@
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Vegetarian</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Vegan</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Pescatarian</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Gluten-free</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Lactose-free</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Keto</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Paleo</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Low FODMAP</span>
               </li>
               <li class="diet-name">
                 <img
                   class="diet-icon"
                   src="img/outline_brunch_dining_black_24dp.png"
+                  alt="little icon of meal"
                 /><span>Kid-friendly</span>
               </li>
             </ul>
@@ -417,40 +460,88 @@
           </div>
           <div class="gallery grid grid--3-cols">
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-1.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-1.jpg"
+                alt="chineese food"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-2.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-2.jpg"
+                alt="steak with sparags"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-3.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-3.jpg"
+                alt="exotic fruits, boiled eggs and prosciutto"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-4.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-4.jpg"
+                alt="fruit-salad"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-5.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-5.jpg"
+                alt="woman chef cutting some food ingredients"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-6.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-6.jpg"
+                alt="food photo"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-7.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-7.jpg"
+                alt="food photo"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-8.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-8.jpg"
+                alt="food photo"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-9.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-9.jpg"
+                alt="food photo"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-10.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-10.jpg"
+                alt="food photo"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-11.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-11.jpg"
+                alt="food photo"
+              />
             </div>
             <div class="unresizable-div">
-              <img class="gallery-img" src="img/gallery/gallery-12.jpg" />
+              <img
+                class="gallery-img"
+                src="img/gallery/gallery-12.jpg"
+                alt="food photo"
+              />
             </div>
           </div>
         </div>
@@ -505,7 +596,7 @@
                   <p>No access to recipes</p>
                 </li>
               </ul>
-              <a href="#" class="cta-button"><p>Start eating well</p></a>
+              <a href="#cta" class="cta-button"><p>Start eating well</p></a>
             </div>
             <!-- CARD ITEM -->
 
@@ -545,7 +636,7 @@
                   <p>Get access to latest recipes</p>
                 </li>
               </ul>
-              <a href="#" class="cta-button"><p>Start eating well</p></a>
+              <a href="#cta" class="cta-button"><p>Start eating well</p></a>
               <span class="recomended">BEST OFFER</span>
             </div>
           </div>
@@ -620,7 +711,7 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full name</label>
                   <input
@@ -628,6 +719,7 @@
                     type="text"
                     placeholder="John Smith"
                     required
+                    name="full-name"
                   />
                 </div>
                 <div>
@@ -637,11 +729,12 @@
                     type="email"
                     placeholder="js@example.com"
                     required
+                    name="email"
                   />
                 </div>
                 <div>
                   <label for="select-where">Where did you hear about us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" required name="select-where">
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube video</option>

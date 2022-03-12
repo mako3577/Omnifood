@@ -19,14 +19,11 @@ const currentYear = new Date().getFullYear();
 yearEL.textContent = currentYear;
 
 // Make mobile navigation work
-
 const btnNavEl = document.querySelector(".button-for-nav");
 const headerEl = document.querySelector(".header");
 const heroSec = document.querySelector(".section-hero");
 
 var navHeight = document.querySelector(".main-header").clientHeight;
-
-const x = String(navHeight) + "px";
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
@@ -36,51 +33,31 @@ btnNavEl.addEventListener("click", function () {
   btnNavEl.classList.toggle("fixed");
 });
 
-// Once nav-bar changes it's position to 'fixed'
-// hero section marginTop is being increased to keep
-// scrolling smooth
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 700) {
-      heroSec.style.marginTop = x;
-      // add padding top to show content behind navbar
-    } else {
-      heroSec.style.marginTop = "0";
+// nav bar will become sticky after scrolling down out of hero section
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
     }
-  });
-});
-// Make header (nav-bar) sticked to top of current display
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 700) {
-      headerEl.classList.add("header-fixed-pos");
-      // add padding top to show content behind navbar
-    } else {
-      headerEl.classList.remove("header-fixed-pos");
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
     }
-  });
-});
-console.log(x);
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(heroSec);
 
+// Set mobile nav buttons to close the menu
 const navButtons = document.querySelectorAll(".main-nav-link");
-navButtons[0].addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
-navButtons[1].addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
-navButtons[2].addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
-navButtons[3].addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
-navButtons[4].addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
+navButtons.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    headerEl.classList.remove("nav-open");
+  });
 });
 
 ///////////////////////////////////////////////////////////
@@ -104,54 +81,3 @@ function checkFlexGap() {
 checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
-
-/*
-.no-flexbox-gap .main-nav-list li:not(:last-child) {
-  margin-right: 4.8rem;
-}
-
-.no-flexbox-gap .list-item:not(:last-child) {
-  margin-bottom: 1.6rem;
-}
-
-.no-flexbox-gap .list-icon:not(:last-child) {
-  margin-right: 1.6rem;
-}
-
-.no-flexbox-gap .delivered-faces {
-  margin-right: 1.6rem;
-}
-
-.no-flexbox-gap .meal-attribute:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.no-flexbox-gap .meal-icon {
-  margin-right: 1.6rem;
-}
-
-.no-flexbox-gap .footer-row div:not(:last-child) {
-  margin-right: 6.4rem;
-}
-
-.no-flexbox-gap .social-links li:not(:last-child) {
-  margin-right: 2.4rem;
-}
-
-.no-flexbox-gap .footer-nav li:not(:last-child) {
-  margin-bottom: 2.4rem;
-}
-
-@media (max-width: 75em) {
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
-    margin-right: 3.2rem;
-  }
-}
-
-@media (max-width: 59em) {
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 4.8rem;
-  }
-}
-*/

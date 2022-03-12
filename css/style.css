@@ -57,6 +57,26 @@ SPACING SYSTEM (PX)
   align-items: center;
 }
 
+.button-for-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  top: 3vh;
+  right: 7vw;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+  position: absolute;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* .main-nav-list {
   background-color: rgba(255, 255, 255, 0.719);
   position: absolute;
@@ -117,18 +137,27 @@ SPACING SYSTEM (PX)
   justify-content: space-between;
   background-color: #fdf2e9;
 
-  /* Because we want 
-  header to be sticky later */
-  height: 9.6rem;
+  height: 8rem;
   padding: 0 4.8rem;
-  position: relative;
+  /* position: relative; */
   transition: all 0.4s;
 }
 
-.header-fixed-pos {
+/* ************ */
+/* navbar sticky */
+/* Styles only aplies when body gets .sticky 
+class from js script, after scrolling out of hero */
+
+/* when nav-bar changes to fixed positioning
+we have to set margin on hero to avoid shaking */
+.sticky .section-hero {
+  margin-top: 8rem;
+}
+
+.sticky .header {
   position: fixed;
   width: 100%;
-  background-color: #fdf2e9cb;
+  background-color: #ffffffdc;
   z-index: 12;
 }
 
@@ -339,6 +368,16 @@ SPACING SYSTEM (PX)
 }
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #d3731f;
 }
 
 .tag {
@@ -590,24 +629,10 @@ SPACING SYSTEM (PX)
   color: #e67e22;
 }
 
-/* .pricing-icon.not-included {
-  color: rgb(168, 28, 28);
-  color: #d3731f;
-} */
-
 .taxes-info {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 9.6rem;
-}
-
-.flex-container {
-  gap: 4.2rem;
-  justify-content: space-between;
-}
-.flex-item {
-  flex-direction: column;
-  gap: 1.6rem;
 }
 
 .pricing-feature-icon {
@@ -631,6 +656,15 @@ SPACING SYSTEM (PX)
 
 .pricing-section {
   padding: 9.6rem 0;
+}
+
+.flex-container {
+  gap: 4.2rem;
+  justify-content: space-between;
+}
+.flex-item {
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 /* CTA SECTION */
@@ -819,25 +853,4 @@ SPACING SYSTEM (PX)
 
 footer .grid--5-cols {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
-}
-
-.button-for-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-  position: absolute;
-  display: none;
-  top: 3vh;
-  right: 7vw;
-}
-
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-  position: absolute;
-}
-
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
 }
